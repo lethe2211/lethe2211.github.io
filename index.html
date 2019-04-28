@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="manifest" href="./manifest.json">
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./service-worker.js').then(function() { console.log('Service Worker Registered'); });
-      }
-    </script>
-    <title>Sample</title>    
-  </head>
-  <body>
-    Sample
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="manifest" href="./manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('./service-worker.js')
+        .then(registation => {
+          return navigator.serviceWorker.ready;
+        })
+        .then(registation => {
+          console.log('Succeed to register', registation);
+        })
+        .catch(error => {
+          console.log('Failed to register', error);
+        });
+    }
+  </script>
+  <title>Sample</title>
+</head>
+
+<body>
+  Sample
+</body>
+
 </html>
