@@ -17,6 +17,7 @@ self.addEventListener('activate', (event) => {
             return Promise.all(
                 cacheKeys.map(cacheKey => {
                     if (cacheKey !== 'cache-key-name') {
+                        console.log(`Delete cache: ${cacheKey}`);
                         return caches.delete(cacheKey);
                     }
                 })
@@ -35,6 +36,7 @@ self.addEventListener('fetch', (event) => {
         .then(cache => {
             return cache.match(event.request)
                 .then(response => {
+                    console.log('Succeed to be returned from cache');
                     return response || fetch(event.request.clone());
                 })
                 .catch(error => {
