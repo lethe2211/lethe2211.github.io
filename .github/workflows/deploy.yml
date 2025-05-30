@@ -38,7 +38,7 @@ jobs:
   build-and-deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
 
     steps:
     - name: Checkout
@@ -71,7 +71,7 @@ jobs:
     name: Deploy to GitHub Pages
     needs: build-and-deploy
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
 
     permissions:
       pages: write
