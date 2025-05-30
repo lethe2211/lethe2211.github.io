@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "links": "Links"
+  },
+  "home": {
+    "title": "Software Engineer Portfolio",
+    "careerSummary": {
+      "title": "Career Summary",
+      "description": "Bilingual (Japanese/English) Senior IT Software Engineer with extensive experience in backend API development, architecture design, and team leadership at major web IT companies. Certified in Kubernetes (CKS, CKA, CKAD) and holding TOEIC 900 score with various IT certifications."
+    },
+    "skills": {
+      "title": "Skills",
+      "languages": "Programming Languages",
+      "frameworks": "Frameworks & Libraries",
+      "tools": "Tools & Technologies",
+      "cloud": "Cloud Platforms",
+      "certifications": "Certifications"
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "projects": {
+      "pokemonDamageCalculator": {
+        "title": "Pokemon SV Damage Calculator",
+        "description": "A damage calculation tool for Pokemon Scarlet/Violet (Work in Progress)",
+        "status": "In Development"
+      },
+      "pokedex": {
+        "title": "Pokedex App",
+        "description": "A Pokemon encyclopedia application built with modern web technologies",
+        "status": "Completed"
+      },
+      "meiRou": {
+        "title": "Mei Rou",
+        "description": "A maze exploration game (Under Development)",
+        "status": "In Development"
+      }
+    }
+  },
+  "links": {
+    "title": "External Links",
+    "github": "GitHub",
+    "linkedin": "LinkedIn", 
+    "qiita": "Qiita",
+    "hatena": "Hatena Blog"
+  },
+  "language": {
+    "switch": "Switch Language",
+    "en": "English",
+    "ja": "Japanese"
+  }
+}

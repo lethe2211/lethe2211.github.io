@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "portfolio": "ポートフォリオ",
+    "links": "リンク"
+  },
+  "home": {
+    "title": "ソフトウェアエンジニア ポートフォリオ",
+    "careerSummary": {
+      "title": "キャリアサマリ",
+      "description": "バイリンガル（日本語/英語）のシニアITソフトウェアエンジニア。大手Web系IT企業にてバックエンドAPI開発、アーキテクチャ設計、チームリードの豊富な経験を持つ。Kubernetes関連資格（CKS、CKA、CKAD）を保有し、TOEIC 900点、各種情報処理技術者試験に合格。"
+    },
+    "skills": {
+      "title": "スキル",
+      "languages": "プログラミング言語",
+      "frameworks": "フレームワーク・ライブラリ",
+      "tools": "ツール・技術",
+      "cloud": "クラウドプラットフォーム",
+      "certifications": "資格"
+    }
+  },
+  "portfolio": {
+    "title": "ポートフォリオ",
+    "projects": {
+      "pokemonDamageCalculator": {
+        "title": "ポケモンSVダメージ計算ツール",
+        "description": "ポケットモンスター スカーレット・バイオレット用のダメージ計算ツール（開発中）",
+        "status": "開発中"
+      },
+      "pokedex": {
+        "title": "ポケモン図鑑アプリ",
+        "description": "モダンなWeb技術で構築されたポケモン図鑑アプリケーション",
+        "status": "完成"
+      },
+      "meiRou": {
+        "title": "迷廊",
+        "description": "迷路探索ゲーム（開発中）",
+        "status": "開発中"
+      }
+    }
+  },
+  "links": {
+    "title": "外部リンク",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "qiita": "Qiita",
+    "hatena": "はてなブログ"
+  },
+  "language": {
+    "switch": "言語切り替え",
+    "en": "English",
+    "ja": "日本語"
+  }
+}
